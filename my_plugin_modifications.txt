@@ -1,0 +1,20 @@
+On line 209, below 
+
+	'objImagePreloader.src = settings.imageArray[settings.activeImage][0];'
+
+I added 
+
+	let the_anchor = $("a[href='"+objImagePreloader.src+"']");
+	let the_div = the_anchor[0].nextElementSibling;
+	let shownInfoHTML = the_div.children[0].innerHTML;
+	let hiddenInfoHTML = the_div.children[1].innerHTML;
+
+then on line 216 after
+
+	'<div class="clearWhenClick">'
+
+I put
+
+	+shownInfoHTML+hiddenInfoHTML+
+
+then on lines 31-35 I updated the url to the plugin file in my project.

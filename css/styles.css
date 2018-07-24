@@ -1,0 +1,118 @@
+/* css that came with the lightbox plugin */
+.photos {
+  display: block;
+}
+
+.photos ul { list-style: none; }
+
+.photos ul li { display: inline; }
+
+.photos ul li a {
+  display: block;
+  float: left;
+  padding: 4px;
+  margin-right: 10px;
+  margin-bottom: 7px;
+  opacity: 0.75;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.photos ul li a:hover {
+  opacity: 1.0;
+}
+
+.photos ul li a img {
+  border-radius: 50%;
+  float: left;
+}
+
+/* lightbox hacks */
+#lightbox-container-image-data-box {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* css I added */
+#lightbox-container-image-box{
+  width: 270px !important;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px; 
+}
+
+#lightbox-container-image-data-box {
+  width: 250px !important;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.unclicked_li{
+  float: left;
+  border: 2px solid #e1d9ec;
+  border-radius: 5px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 440px;
+}
+
+.unclicked_text{
+  float: right;
+  margin-right: 20px;
+  padding-top: 20px;
+  max-width: 241px;
+}
+
+.unclicked_img{
+  border: 2px solid #e1d9ec;
+  margin-left: 20px;
+  margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+.hiddenInfo{
+  display:none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+}
+
+#lightbox-image{
+  border-radius: 50%;
+}
+
+h1, h2, h3, p {
+  font-family: "Arial", serif;
+}
+
+h1, h2{
+  color: #404040;
+}
+
+p{
+  color:#8c8c8c;
+}
+
+body{
+  background-color: #f2f2f2;
+}
+
+li{
+  background-color:white;
+}
+
+p, h1, h2, a {
+  word-wrap: break-word;
+}
